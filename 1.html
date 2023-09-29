@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login, Dashboard, and Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h1>Login or Sign Up</h1>
+            <div id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type="button" id="login-button">Login</button>
+            </div>
+            <div id="signup-form" style="display: none;">
+                <input type="email" id="signup-email" placeholder="Email" required>
+                <input type="password" id="signup-password" placeholder="Password" required><br>
+                <button type="button" id="signup-button">Sign Up</button>
+            </div>
+        </div>
+        <div id="dashboard" style="display: none;">
+            <h2>Welcome to the Dashboard</h2>
+            <p>Hello, <span id="user-name"></span>!</p>
+            <div>
+                <input type="text" id="city-input" placeholder="Enter movie">
+                <button type="button" id="get-weather-button">Get movie</button>
+            </div>
+            <div id="weather-result" style="display: none;">
+                <h3>Movie Details</h3>
+                <p><strong>Movie:</strong> <span id="city-name"></span></p>
+                <p><strong></strong> <span id="temperature"></span></p>
+                <p><strong></strong> <span id="weather-description"></span></p>
+            </div>
+            <button type="button" id="logout-button">Logout</button>
+        </div>
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
